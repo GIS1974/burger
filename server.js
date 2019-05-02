@@ -4,6 +4,11 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
+// For Heroku deployment
+// app.get("/", function(req, res) {
+//   res.sendFile(path.join(__dirname, "home.html"));
+// });
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
